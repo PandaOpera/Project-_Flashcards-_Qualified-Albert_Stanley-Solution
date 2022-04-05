@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { createDeck } from "../../utils/api/index";
 import Navbar from "../Display/Navbar";
 import { useHistory} from "react-router-dom";
@@ -37,12 +37,12 @@ const cancelHandler = async (event) => {
 
       <form onSubmit={submitFormHandler} >
         
-        <div class="form-group">
+        <div className="form-group">
           <label>
             <h4>Name</h4>
           </label>
-          <input
-            class="form-control"
+          <input 
+            className="form-control"
             name="name"
             id="name"
             type="text"
@@ -52,12 +52,12 @@ const cancelHandler = async (event) => {
           />
         </div>
         
-        <div class="form-group">
+        <div className="form-group">
           <label>
             <h4>Description</h4>
           </label>
           <textarea
-            class="form-control"
+            className="form-control"
             name="description"
             id="description"
             rows="6"
@@ -67,10 +67,10 @@ const cancelHandler = async (event) => {
           ></textarea>
         </div>
 
-          <button type="button" class="btn btn-secondary mr-2" onClick={cancelHandler}>
+          <button type="button" className="btn btn-secondary mr-2" onClick={cancelHandler}>
             Cancel
           </button>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
       </form>

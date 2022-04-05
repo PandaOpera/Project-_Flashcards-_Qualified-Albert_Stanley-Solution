@@ -26,7 +26,7 @@ function ViewDeck() {
       }
     }
     readDeckFromAPI();
-  }, []);
+  }, [deckId]);
 
 
   return (

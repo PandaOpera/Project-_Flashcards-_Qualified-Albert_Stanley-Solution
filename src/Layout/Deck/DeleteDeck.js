@@ -8,7 +8,7 @@ function DeleteDeck({ deck }) {
   const deleteHandler = () => {
     if (window.confirm("Are you sure you want to delete this deck?")) {
       deleteDeck(deck.id);
-      window.location.reload();
+      history.push("/");
     }
   };
 
